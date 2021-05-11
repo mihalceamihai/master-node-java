@@ -1,1 +1,17 @@
-test
+version: '3'
+services:
+  data-acquisition-app:
+    container_name: master-node-edge-computing
+    image: mihalceamihai/master-node-edge-computing
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgresqldb
+  postgresqldb:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=employeedb
