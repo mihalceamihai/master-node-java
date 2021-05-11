@@ -3,7 +3,7 @@ WORKDIR /workdir
 COPY pom.xml /workdir/
 RUN ["mvn", "verify", "clean", "--fail-never"]
 COPY . /workdir/
-RUN mmvn clean install -DskipTests=true
+RUN mvn clean install -DskipTests=true
 
 from repos.stsnet.ro:8082/openjdk:8-slim
 MAINTAINER Mihalcea Mihai
