@@ -12,7 +12,7 @@ RUN apt update -y \
     && apt install -y net-tools \
     && apt auto-remove -y \
     && chmod +x /usr/local/bin/entrypoint.sh \
-    && mkdir /app \
+    && mkdir /app
 
 
 COPY --from=build-container /workdir/target/*.jar /app/
