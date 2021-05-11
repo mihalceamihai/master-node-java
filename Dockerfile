@@ -5,7 +5,7 @@ RUN ["mvn", "verify", "clean", "--fail-never"]
 COPY . /workdir/
 RUN mvn clean install -DskipTests=true
 
-from repos.stsnet.ro:8082/openjdk:8-slim
+from openjdk:8-slim
 MAINTAINER Mihalcea Mihai
 COPY entrypoint.sh /usr/local/bin/
 RUN apt update -y \
