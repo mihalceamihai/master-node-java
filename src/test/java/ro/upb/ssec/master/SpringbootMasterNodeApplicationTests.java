@@ -1,10 +1,10 @@
-package com.example.postgres.springbootpostgresdocker;
+package ro.upb.ssec.master;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringbootPostgresDockerApplicationTests {
+class SpringbootMasterNodeApplicationTests {
 
     @Test
     void contextLoads() {

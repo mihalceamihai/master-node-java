@@ -1,7 +1,7 @@
-package com.example.postgres.springbootpostgresdocker.controller;
+package ro.upb.ssec.master.controller;
 
-import com.example.postgres.springbootpostgresdocker.MetricsRepository;
-import com.example.postgres.springbootpostgresdocker.model.Metrics;
+import ro.upb.ssec.master.MetricsRepository;
+import ro.upb.ssec.master.model.Metrics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;

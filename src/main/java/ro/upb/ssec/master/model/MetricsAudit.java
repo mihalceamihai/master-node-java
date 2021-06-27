@@ -1,4 +1,4 @@
-package com.example.postgres.springbootpostgresdocker.model;
+package ro.upb.ssec.master.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedDate;

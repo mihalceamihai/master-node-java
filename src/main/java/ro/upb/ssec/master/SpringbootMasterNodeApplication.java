@@ -1,6 +1,6 @@
-package com.example.postgres.springbootpostgresdocker;
+package ro.upb.ssec.master;
 
-import com.example.postgres.springbootpostgresdocker.model.AuditorAwareImpl;
+import ro.upb.ssec.master.model.AuditorAwareImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
-public class SpringbootPostgresDockerApplication {
+public class SpringbootMasterNodeApplication {
 
     @Bean
     public AuditorAware<String> auditorAware() {
@@ -19,7 +19,7 @@ public class SpringbootPostgresDockerApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootPostgresDockerApplication.class, args);
+        SpringApplication.run(SpringbootMasterNodeApplication.class, args);
     }
 
 }

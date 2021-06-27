@@ -1,6 +1,6 @@
-package com.example.postgres.springbootpostgresdocker;
+package ro.upb.ssec.master;
 
-import com.example.postgres.springbootpostgresdocker.model.Metrics;
+import ro.upb.ssec.master.model.Metrics;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MetricsRepository extends JpaRepository<Metrics,Integer> {

@@ -1,4 +1,4 @@
-package com.example.postgres.springbootpostgresdocker.model;
+package ro.upb.ssec.master.model;
 
 
 import lombok.AllArgsConstructor;

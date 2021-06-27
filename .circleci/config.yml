@@ -2,7 +2,7 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: mihalceamihai/master-node-edge-computing
+      IMAGE_NAME: mihalceamihai/master-node-java
     docker:
       - image: circleci/buildpack-deps
 jobs:
