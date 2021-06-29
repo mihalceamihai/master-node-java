@@ -18,4 +18,4 @@ RUN apt update -y \
 COPY --from=build-container /workdir/target/*.jar /app/
 WORKDIR /app
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-CMD ["springboot-postgres-docker-aws-0.0.1-SNAPSHOT.jar"]
+CMD ["master-0.0.1-SNAPSHOT.jar"]
